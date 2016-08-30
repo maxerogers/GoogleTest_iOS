@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		78448C0E003EE33037E95613 /* Pods_CommitteeTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9257029CBE2570613993393 /* Pods_CommitteeTVTests.framework */; };
-		AF245EBC1D708C9C00E36D4B /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF245EBA1D708C9C00E36D4B /* WeatherResponse.swift */; };
 		AFA4AA9A1D6F3AB500C71FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA4AA991D6F3AB500C71FFD /* AppDelegate.swift */; };
 		AFA4AA9C1D6F3AB500C71FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA4AA9B1D6F3AB500C71FFD /* ViewController.swift */; };
 		AFA4AA9F1D6F3AB500C71FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA4AA9D1D6F3AB500C71FFD /* Main.storyboard */; };
@@ -16,6 +15,8 @@
 		AFDC39ED1D7091560085FE2E /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39EB1D7091560085FE2E /* CalendarEvent.swift */; };
 		AFDC39F21D70A5CC0085FE2E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39F01D70A5CC0085FE2E /* DataManager.swift */; };
 		AFDC39FD1D75CB780085FE2E /* CommitteeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39FC1D75CB780085FE2E /* CommitteeTVTests.swift */; };
+		AFDC3A041D75D1C10085FE2E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39F01D70A5CC0085FE2E /* DataManager.swift */; };
+		AFDC3A051D75D1C50085FE2E /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39EB1D7091560085FE2E /* CalendarEvent.swift */; };
 		E2242D5641A6B8D475F6021C /* Pods_CommitteeTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E8B1496A312D4351123693 /* Pods_CommitteeTV.framework */; };
 		E87675D1F6371122EBC0B611 /* Pods_CommitteeTV_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01961A759866CF551C1C4E /* Pods_CommitteeTV_tvOS.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +40,6 @@
 		6A299EEEAA6D7B81FDB7AF24 /* Pods_GoogleCalendarTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleCalendarTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B4944966DB1D639704C529 /* Pods-GoogleCalendarTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleCalendarTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleCalendarTestTests/Pods-GoogleCalendarTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		8314F8E7098E9AAF2CBD303B /* Pods-CommitteeTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitteeTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommitteeTVTests/Pods-CommitteeTVTests.release.xcconfig"; sourceTree = "<group>"; };
-		AF245EBA1D708C9C00E36D4B /* WeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherResponse.swift; path = Models/WeatherResponse.swift; sourceTree = "<group>"; };
 		AF52F51D1D6E54C0001F1C93 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AFA4AA971D6F3AB500C71FFD /* CommitteeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitteeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA4AA991D6F3AB500C71FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 		AF245EB91D708C5600E36D4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AF245EBA1D708C9C00E36D4B /* WeatherResponse.swift */,
 				AFDC39EB1D7091560085FE2E /* CalendarEvent.swift */,
 			);
 			name = Models;
@@ -112,10 +111,10 @@
 		AF52F4FD1D6E4BB4001F1C93 = {
 			isa = PBXGroup;
 			children = (
+				AF52F51D1D6E54C0001F1C93 /* .gitignore */,
+				AFA4AAB41D6F7E1200C71FFD /* Playground.playground */,
 				AFDC39EF1D70A5C10085FE2E /* Helper */,
 				AF245EB91D708C5600E36D4B /* Models */,
-				AFA4AAB41D6F7E1200C71FFD /* Playground.playground */,
-				AF52F51D1D6E54C0001F1C93 /* .gitignore */,
 				AFA4AA981D6F3AB500C71FFD /* CommitteeTV */,
 				AFDC39FB1D75CB780085FE2E /* CommitteeTVTests */,
 				AF52F5071D6E4BB4001F1C93 /* Products */,
@@ -376,7 +375,6 @@
 			files = (
 				AFA4AA9C1D6F3AB500C71FFD /* ViewController.swift in Sources */,
 				AFDC39F21D70A5CC0085FE2E /* DataManager.swift in Sources */,
-				AF245EBC1D708C9C00E36D4B /* WeatherResponse.swift in Sources */,
 				AFDC39ED1D7091560085FE2E /* CalendarEvent.swift in Sources */,
 				AFA4AA9A1D6F3AB500C71FFD /* AppDelegate.swift in Sources */,
 			);
@@ -387,6 +385,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFDC39FD1D75CB780085FE2E /* CommitteeTVTests.swift in Sources */,
+				AFDC3A051D75D1C50085FE2E /* CalendarEvent.swift in Sources */,
+				AFDC3A041D75D1C10085FE2E /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
