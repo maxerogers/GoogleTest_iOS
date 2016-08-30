@@ -8,30 +8,17 @@ def datamanagement_pods
     pod 'SwiftyJSON'
 end
 
-
-target 'GoogleCalendarTest' do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for GoogleCalendarTest
-  pod 'GoogleAPIClient/Calendar'
-  pod 'GTMOAuth2'
-  datamanagement_pods
+target 'CommitteeTV' do
+    use_frameworks!
+    
+    datamanagement_pods
 end
 
-target 'GoogleCalendarTestTests' do
-  use_frameworks!
+target 'CommitteeTVTests' do
+    use_frameworks!
   
-  pod 'Quick'
-  pod 'Nimble'
-  datamanagement_pods
+    pod 'Quick'
+    pod 'Nimble'
+    datamanagement_pods
 end
 
-#target 'GoogleCalendarTest_tvOS' do
-#    # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-#    use_frameworks!
-#    
-#    # Pods for GoogleCalendarTest
-#    pod 'GoogleAPIClient/Calendar'
-#    pod 'GTMOAuth2'
-#end

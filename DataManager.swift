@@ -12,15 +12,17 @@ import AlamofireObjectMapper
 import SwiftyJSON
 
 extension NSMutableURLRequest {
+
+    /**
+     Percent escape in conformance with W3C HTML spec:
+     
+     [See W3 Specification](http://www.w3.org/TR/html5/forms.html#application/x-www-form-urlencoded-encoding-algorithm)
+     
+     - parameters:
+         - string: The string to be percent escaped
+     - returns: a percent-escaped string.
+     */
     
-    /// Percent escape
-    ///
-    /// Percent escape in conformance with W3C HTML spec:
-    ///
-    /// See http://www.w3.org/TR/html5/forms.html#application/x-www-form-urlencoded-encoding-algorithm
-    ///
-    /// - parameter string:   The string to be percent escaped.
-    /// - returns:            Returns percent-escaped string.
     
     private func percentEscapeString(string: String) -> String {
         let characterSet = NSCharacterSet(charactersInString: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._* ")
@@ -30,10 +32,13 @@ extension NSMutableURLRequest {
             .stringByReplacingOccurrencesOfString(" ", withString: "+", options: [], range: nil)
     }
     
-    /// Encode the parameters for `application/x-www-form-urlencoded` request
-    ///
-    /// - parameter parameters:   A dictionary of string values to be encoded in POST request
-    
+    /**
+     Encode the parameters for `application/x-www-form-urlencoded` request
+     
+     - parameters:
+        - parameters: A dictionary of string values to be encoded in POST request
+     */
+
     func encodeParameters(parameters: [String : String]) {
         HTTPMethod = "POST"
         
@@ -43,7 +48,18 @@ extension NSMutableURLRequest {
             .dataUsingEncoding(NSUTF8StringEncoding)
     }
     
-    func addURLParameters(params: [String: String]) {
+    /**
+     Append the parameters for a url query. 
+     
+     e.g. http://icecream_maker.com/cones?flavor=vanilla&topping=sprinkles
+     
+     [see wikipedia](https://en.wikipedia.org/wiki/Query_string)
+     
+     - parameters:
+         - params: A dictionary of string values to be encoded in the url's query
+     */
+    
+    func addURLQuery(params: [String: String]) {
         guard let url = self.URL else { return }
         var urlString = url.absoluteString
         for (index, parameter) in params.keys.enumerate() {
