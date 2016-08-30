@@ -11,6 +11,23 @@ import Alamofire
 import AlamofireObjectMapper
 import SwiftyJSON
 
+public extension SequenceType where Generator.Element: Hashable {
+    var uniqueElements: [Generator.Element] {
+        return Array(
+            Set(self)
+        )
+    }
+}
+public extension SequenceType where Generator.Element: Equatable {
+    var uniqueElements: [Generator.Element] {
+        return self.reduce([]){uniqueElements, element in
+            uniqueElements.contains(element)
+                ? uniqueElements
+                : uniqueElements + [element]
+        }
+    }
+}
+
 extension NSMutableURLRequest {
 
     /**
@@ -61,16 +78,17 @@ extension NSMutableURLRequest {
     
     func addURLQuery(params: [String: String]) {
         guard let url = self.URL else { return }
-        var urlString = url.absoluteString
-        for (index, parameter) in params.keys.enumerate() {
-            if (index == 0) {
-                urlString += "?\(parameter)=\(params[parameter]!)"
-            }
-            else {
-                urlString += "&\(parameter)=\(params[parameter]!)"
-            }
+        
+        let components = NSURLComponents(string: url.absoluteString)
+        if components?.queryItems == nil {
+            components?.queryItems = [NSURLQueryItem]()
         }
-        self.URL = NSURL(string: urlString)
+        for (_, parameter) in params.keys.enumerate() {
+            let query = NSURLQueryItem(name: parameter, value: params[parameter])
+            components?.queryItems?.append(query)
+        }
+        components?.queryItems = components?.queryItems?.uniqueElements
+        self.URL = components?.URL
     }
 }
 

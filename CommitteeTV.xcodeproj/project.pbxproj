@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		78448C0E003EE33037E95613 /* Pods_CommitteeTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9257029CBE2570613993393 /* Pods_CommitteeTVTests.framework */; };
-		AFA4AA9A1D6F3AB500C71FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA4AA991D6F3AB500C71FFD /* AppDelegate.swift */; };
-		AFA4AA9C1D6F3AB500C71FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA4AA9B1D6F3AB500C71FFD /* ViewController.swift */; };
-		AFA4AA9F1D6F3AB500C71FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA4AA9D1D6F3AB500C71FFD /* Main.storyboard */; };
-		AFA4AAA11D6F3AB500C71FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA4AAA01D6F3AB500C71FFD /* Assets.xcassets */; };
+		AF3FE9BE1D75DE8800842B67 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FE9B81D75DE8800842B67 /* EventsTableViewController.swift */; };
+		AF3FE9BF1D75DE8800842B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FE9B91D75DE8800842B67 /* AppDelegate.swift */; };
+		AF3FE9C01D75DE8800842B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3FE9BA1D75DE8800842B67 /* Assets.xcassets */; };
+		AF3FE9C21D75DE8800842B67 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF3FE9BC1D75DE8800842B67 /* Info.plist */; };
+		AF3FE9C31D75DE8800842B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FE9BD1D75DE8800842B67 /* ViewController.swift */; };
+		AF3FE9C61D75DED100842B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3FE9C41D75DED100842B67 /* Main.storyboard */; };
 		AFDC39ED1D7091560085FE2E /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39EB1D7091560085FE2E /* CalendarEvent.swift */; };
 		AFDC39F21D70A5CC0085FE2E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39F01D70A5CC0085FE2E /* DataManager.swift */; };
 		AFDC39FD1D75CB780085FE2E /* CommitteeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39FC1D75CB780085FE2E /* CommitteeTVTests.swift */; };
 		AFDC3A041D75D1C10085FE2E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39F01D70A5CC0085FE2E /* DataManager.swift */; };
 		AFDC3A051D75D1C50085FE2E /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC39EB1D7091560085FE2E /* CalendarEvent.swift */; };
 		E2242D5641A6B8D475F6021C /* Pods_CommitteeTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E8B1496A312D4351123693 /* Pods_CommitteeTV.framework */; };
-		E87675D1F6371122EBC0B611 /* Pods_CommitteeTV_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01961A759866CF551C1C4E /* Pods_CommitteeTV_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +41,14 @@
 		6A299EEEAA6D7B81FDB7AF24 /* Pods_GoogleCalendarTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleCalendarTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B4944966DB1D639704C529 /* Pods-GoogleCalendarTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleCalendarTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleCalendarTestTests/Pods-GoogleCalendarTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		8314F8E7098E9AAF2CBD303B /* Pods-CommitteeTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitteeTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommitteeTVTests/Pods-CommitteeTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF3FE9B81D75DE8800842B67 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsTableViewController.swift; path = CommitteeTV/EventsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF3FE9B91D75DE8800842B67 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CommitteeTV/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		AF3FE9BA1D75DE8800842B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CommitteeTV/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		AF3FE9BC1D75DE8800842B67 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CommitteeTV/Info.plist; sourceTree = SOURCE_ROOT; };
+		AF3FE9BD1D75DE8800842B67 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CommitteeTV/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		AF3FE9C51D75DED100842B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CommitteeTV/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		AF52F51D1D6E54C0001F1C93 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AFA4AA971D6F3AB500C71FFD /* CommitteeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitteeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFA4AA991D6F3AB500C71FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFA4AA9B1D6F3AB500C71FFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AFA4AA9E1D6F3AB500C71FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AFA4AAA01D6F3AB500C71FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AFA4AAA21D6F3AB500C71FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA4AAB41D6F7E1200C71FFD /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		AFDC39EB1D7091560085FE2E /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarEvent.swift; path = Models/CalendarEvent.swift; sourceTree = "<group>"; };
 		AFDC39F01D70A5CC0085FE2E /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		AFDC39FE1D75CB780085FE2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7B5B6EEC5EAFB9480951505 /* Pods-CommitteeTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitteeTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommitteeTVTests/Pods-CommitteeTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9257029CBE2570613993393 /* Pods_CommitteeTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommitteeTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC2BCA9549B1D123E2ABD408 /* Pods-CommitteeTV_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitteeTV_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommitteeTV_tvOS/Pods-CommitteeTV_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		BF01961A759866CF551C1C4E /* Pods_CommitteeTV_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommitteeTV_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E8B1496A312D4351123693 /* Pods_CommitteeTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommitteeTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE047AC8D360496AAEBD52E2 /* Pods-GoogleCalendarTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleCalendarTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleCalendarTestTests/Pods-GoogleCalendarTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0566C8E100DDCD5535E2B3C /* Pods-CommitteeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitteeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommitteeTV/Pods-CommitteeTV.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87675D1F6371122EBC0B611 /* Pods_CommitteeTV_tvOS.framework in Frameworks */,
 				E2242D5641A6B8D475F6021C /* Pods_CommitteeTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +93,6 @@
 				F0566C8E100DDCD5535E2B3C /* Pods-CommitteeTV.release.xcconfig */,
 				B7B5B6EEC5EAFB9480951505 /* Pods-CommitteeTVTests.debug.xcconfig */,
 				8314F8E7098E9AAF2CBD303B /* Pods-CommitteeTVTests.release.xcconfig */,
-				BC2BCA9549B1D123E2ABD408 /* Pods-CommitteeTV_tvOS.debug.xcconfig */,
 				0DA30E34DDDADE6925CCC3BE /* Pods-CommitteeTV_tvOS.release.xcconfig */,
 			);
 			name = Pods;
@@ -135,11 +133,12 @@
 		AFA4AA981D6F3AB500C71FFD /* CommitteeTV */ = {
 			isa = PBXGroup;
 			children = (
-				AFA4AA991D6F3AB500C71FFD /* AppDelegate.swift */,
-				AFA4AA9B1D6F3AB500C71FFD /* ViewController.swift */,
-				AFA4AA9D1D6F3AB500C71FFD /* Main.storyboard */,
-				AFA4AAA01D6F3AB500C71FFD /* Assets.xcassets */,
-				AFA4AAA21D6F3AB500C71FFD /* Info.plist */,
+				AF3FE9C41D75DED100842B67 /* Main.storyboard */,
+				AF3FE9BD1D75DE8800842B67 /* ViewController.swift */,
+				AF3FE9B81D75DE8800842B67 /* EventsTableViewController.swift */,
+				AF3FE9B91D75DE8800842B67 /* AppDelegate.swift */,
+				AF3FE9BA1D75DE8800842B67 /* Assets.xcassets */,
+				AF3FE9BC1D75DE8800842B67 /* Info.plist */,
 			);
 			name = CommitteeTV;
 			path = GoogleCalendarTest_tvOS;
@@ -169,7 +168,6 @@
 				68C21673831E9985589CDD01 /* Pods_GoogleCalendarTestTests.framework */,
 				C8E8B1496A312D4351123693 /* Pods_CommitteeTV.framework */,
 				B9257029CBE2570613993393 /* Pods_CommitteeTVTests.framework */,
-				BF01961A759866CF551C1C4E /* Pods_CommitteeTV_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -261,8 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA4AAA11D6F3AB500C71FFD /* Assets.xcassets in Resources */,
-				AFA4AA9F1D6F3AB500C71FFD /* Main.storyboard in Resources */,
+				AF3FE9C01D75DE8800842B67 /* Assets.xcassets in Resources */,
+				AF3FE9C21D75DE8800842B67 /* Info.plist in Resources */,
+				AF3FE9C61D75DED100842B67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA4AA9C1D6F3AB500C71FFD /* ViewController.swift in Sources */,
 				AFDC39F21D70A5CC0085FE2E /* DataManager.swift in Sources */,
+				AF3FE9BE1D75DE8800842B67 /* EventsTableViewController.swift in Sources */,
 				AFDC39ED1D7091560085FE2E /* CalendarEvent.swift in Sources */,
-				AFA4AA9A1D6F3AB500C71FFD /* AppDelegate.swift in Sources */,
+				AF3FE9BF1D75DE8800842B67 /* AppDelegate.swift in Sources */,
+				AF3FE9C31D75DE8800842B67 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +401,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AFA4AA9D1D6F3AB500C71FFD /* Main.storyboard */ = {
+		AF3FE9C41D75DED100842B67 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AFA4AA9E1D6F3AB500C71FFD /* Base */,
+				AF3FE9C51D75DED100842B67 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -501,9 +501,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = GoogleCalendarTest_tvOS/Info.plist;
+				INFOPLIST_FILE = CommitteeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxrogers.GoogleCalendarTest-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxrogers.CommitteeTV;
 				PRODUCT_NAME = CommitteeTV;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -517,9 +517,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = GoogleCalendarTest_tvOS/Info.plist;
+				INFOPLIST_FILE = CommitteeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maxrogers.GoogleCalendarTest-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxrogers.CommitteeTV;
 				PRODUCT_NAME = CommitteeTV;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
